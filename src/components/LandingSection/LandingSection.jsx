@@ -1,8 +1,46 @@
 import LandingIl from '../../assets/vectors/landingil.svg';
-
+import gsap from "gsap";
+import { useEffect } from "react";
 import "./LandingSection.css";
 
 const LandingSection = () => {
+    useEffect(() => {
+        const tl = gsap.timeline();
+    
+        tl.to(".main-heading", {
+          opacity: 1,
+          duration: 1.5,
+        })
+          .from(".main-heading", {
+            x: -100,
+            duration: 1.5,
+            delay: -1.5,
+          })
+          .to(".sub-heading", {
+            opacity: 1,
+            delay: -1,
+            duration: 1.5,
+          })
+          .from(".sub-heading", {
+            x: -100,
+            delay: -1.5,
+            duration: 1.5,
+          })
+          .to(".landing-il", {
+            opacity: 1,
+            delay: -1,
+            duration: 1.5,
+          })
+          .from(".landing-il", {
+            y: 100,
+            delay: -1.5,
+            duration: 1.5,
+          })
+          .to(".navbar", {
+            opacity: 1,
+            duration: 1.5,
+          });
+      }, []);
     return (
         <section id="landing">
         <header className="navbar">
