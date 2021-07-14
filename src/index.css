@@ -8,9 +8,9 @@ body {
   padding: 0;
 }
 
-/* html {
+html {
   scroll-behavior: smooth;
-} */
+}
 
 a {
   color: inherit;
