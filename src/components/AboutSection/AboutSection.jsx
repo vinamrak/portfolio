@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import gsap from "gsap";
-
+import LandingIl from '../../assets/vectors/landingil.svg';
 // Stylesheets
 import "./AboutSection.css";
 
@@ -40,21 +40,19 @@ const AboutSection = () => {
         </h2>
       </header>
       <main>
+        <div>
+        <div className="about-pic">
+        <img src ={LandingIl} alt="Landing Illustration" />
+        </div>
+        <div className="about-text"> 
         <p className="text" id="about-content">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
-          quo ea, modi laudantium quisquam dolorem deserunt adipisci! Neque amet
-          recusandae optio, iste ipsum reiciendis iure sunt fugit ducimus quos,
-          libero dolorum error excepturi debitis quaerat suscipit tenetur hic
-          provident corporis aut explicabo! Culpa laboriosam, rerum dignissimos
-          odit magnam dolore reprehenderit omnis nesciunt minus labore unde
-          recusandae blanditiis impedit officiis, velit consequatur eaque
-          pariatur fuga, corrupti ut minima eius? Consectetur, sapiente nemo a
-          voluptatem voluptatibus, vel cum tenetur id sed enim ad vitae, quasi
-          totam eum maxime incidunt magnam! Autem recusandae aliquam deserunt
-          doloribus consectetur voluptate odio modi reiciendis magnam
-          temporibus?
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, odit non voluptatem modi eligendi exercitationem amet distinctio optio itaque aspernatur voluptate cumque iste laboriosam nesciunt repudiandae dolorum ut. Porro temporibus qui omnis? Non eaque est earum perferendis alias nam ut recusandae dolores adipisci atque veniam, reiciendis, magni dignissimos neque aliquam.
+          
         </p>
+        </div>
+        </div>
       </main>
+
     </section>
   );
 };

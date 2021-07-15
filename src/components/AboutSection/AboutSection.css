@@ -3,6 +3,12 @@
   padding: 6rem 8rem;
   box-sizing: border-box;
 }
+.about-pic {
+  display: inline-block;
+}
+.about-text {
+  display: inline-block;
+}
 
 @media only screen and (max-width: 1045px) {
   .about {

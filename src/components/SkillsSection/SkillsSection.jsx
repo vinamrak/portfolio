@@ -47,14 +47,21 @@ const SkillsSection = () => {
       </header>
       <main>
         <article className="skill-cont">
-          {SKILLS.map(({ name, skill }, i) => (
+          {/* {SKILLS.map(({ name, skill }, i) => (
             <div className="skill" key={i}>
               <div className="progress-bar">
                 <div className="bar" style={{ height: `${skill}%` }} />
               </div>
               <span>{name}</span>
             </div>
+          ))} */}
+                    {SKILLS.map(({ name, img }, i) => (
+            <div className="skill" key={i}>
+              <img src={img} alt="skill logo" className="skill-img" />
+              <span>{name}</span>
+            </div>
           ))}
+
         </article>
       </main>
     </section>
